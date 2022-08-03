@@ -37,7 +37,7 @@ document.querySelector('.btn--roll').addEventListener('click', function () {
       currentScore += randDice;
       document.querySelector(`#current--${activePlayer}`).textContent =
         currentScore;
-      if (score[activePlayer] + currentScore >= 20) {
+      if (score[activePlayer] + currentScore >= 100) {
         playing = false;
         score[activePlayer] += currentScore;
         document.querySelector(`#score--${activePlayer}`).textContent =
